@@ -26,13 +26,13 @@ Different files that exist in ifElse folder:
         -error.go
 
     Working of files individually:
-        All input that are entered by user will be converted into number individually in every file.
+        All input that are entered by user will be converted into number individually in every file where necessary.
         -reader.go:
             Gives two output 1st user's input and 2nd error (if any).
         -error.go:
             Takes error (if any) and Prints that error to the user.
         -plusMinusChecker.go:
-            Input that is given to us will get changed into integer then checks if value is Positive, Negative or Zero and prints the respective output.
+            Input will get checked if value is Positive, Negative or Zero and prints the respective output.
         -oddEven.go:
             Checks for Odd or Even for a number given by user.
         -loginChecker.go:

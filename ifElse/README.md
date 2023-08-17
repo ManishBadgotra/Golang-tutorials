@@ -26,6 +26,7 @@ Different files that exist in ifElse folder:
         -error.go
 
     Working of files individually:
+        All input that are entered by user will be converted into number individually in every file.
         -reader.go:
             Gives two output 1st user's input and 2nd error (if any).
         -error.go:
@@ -33,11 +34,11 @@ Different files that exist in ifElse folder:
         -plusMinusChecker.go:
             Input that is given to us will get changed into integer then checks if value is Positive, Negative or Zero and prints the respective output.
         -oddEven.go:
-            Checks if number is Odd or Not which is given by user.
+            Checks for Odd or Even for a number given by user.
         -loginChecker.go:
-            It takes email and password and checks if both are same and returns the output.
+            Takes email and password from user and compare it with fixed email and password if both matches then shows "Login successfull" and if do not matches then shows "Login unsuccessfull".
         -leapYearChecker.go:
-            Validates if the given number is leap year or not according to Gregorian calender
+            Validates if the given number is leap year or not according to Gregorian calender.
 
 
 Resources:

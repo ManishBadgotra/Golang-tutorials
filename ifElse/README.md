@@ -9,13 +9,6 @@ This is an if-else practice section.
 
 Different files that exist in ifElse folder:
 
-    Package Requirements according to individual files:
-        -bufio
-        -fmt
-        -os
-        -strconv
-        -strings
-
     files:
         -ageChecker.go 
         -leapYearChecker.go

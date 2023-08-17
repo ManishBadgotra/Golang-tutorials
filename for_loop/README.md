@@ -9,9 +9,6 @@ There are different ways to use for-loop in Go.
 
 Working in for-loop:
 
-    Package Requirements:
-        -fmt
-
     Files:
         -iteration_in_for_loop.go
         -loop_over_string.go

@@ -7,9 +7,8 @@ var (
 
 func main() {
 
-	primeOrNot(num)
-
 	plusMinusChecker(num)
+
 	loginChecker(email, pass)
 
 	oddEven(num)

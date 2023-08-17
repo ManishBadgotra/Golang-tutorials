@@ -1,4 +1,4 @@
-This is a if-else practice section.
+This is an if-else practice section.
     There are many functions that I made to practice if-else questions like,
         Age Checker
         Leap year checker

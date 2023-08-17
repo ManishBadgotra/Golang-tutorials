@@ -13,21 +13,21 @@ Working of Multi Greetings Program:
         -time
 
     files:
-        main.go
-        multiGreetings.go
-        getChar.go
+        -main.go
+        -multiGreetings.go
+        -getChar.go
 
     Working of files individually:
-        main.go:
+        -main.go:
             Tells what this program is for.
             And asks name input from user in loop then appends it in slice
             after appending the given name it asks user if they want to continue Y/n and if user enters Y
             it repeats the program or else ends for-loop and calls multiGreetings function.
 
-        multiGreetings.go:
+        -multiGreetings.go:
             Takes slice as an parameters and loops through it for Greeting individual names that is given by user.
 
-        getChar.go:
+        -getChar.go:
             This function takes two parameters str and index
             str that is given by user and
             index which is set to 0 in main file.
@@ -38,8 +38,8 @@ Working of Multi Greetings Program:
 
 Resources:
     theory:
-        Website Geeksforgeeks:
-            https://www.geeksforgeeks.org/how-to-map-a-rune-to-uppercase-in-golang/?ref=ml_lbp
+        -Website Geeksforgeeks:
+            --https://www.geeksforgeeks.org/how-to-map-a-rune-to-uppercase-in-golang/?ref=ml_lbp
     video:
-        Channel name (Golang Dojo):
-            https://www.youtube.com/watch?v=7isCXLWPTqI
+        -Channel name (Golang Dojo):
+            --https://www.youtube.com/watch?v=7isCXLWPTqI

@@ -41,5 +41,5 @@ Resources:
         -Website Geeksforgeeks:
             --https://www.geeksforgeeks.org/how-to-map-a-rune-to-uppercase-in-golang/?ref=ml_lbp
     video:
-        -Channel name (Golang Dojo):
+        -Channel name Golang Dojo (YouTube.com):
             --https://www.youtube.com/watch?v=7isCXLWPTqI

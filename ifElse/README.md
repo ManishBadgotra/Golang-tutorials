@@ -37,7 +37,7 @@ Different files that exist in ifElse folder:
         -loginChecker.go:
             It takes email and password and checks if both are same and returns the output.
         -leapYearChecker.go:
-            Validates if the given number is leap year or not according to Gordian calender
+            Validates if the given number is leap year or not according to Gregorian calender
 
 
 Resources:

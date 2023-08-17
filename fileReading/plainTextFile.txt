@@ -1,0 +1,3 @@
+This line is entered with the help of Go program.
+This is a second line pushed into the file.
+This is a last line entered in the file.

@@ -1,6 +1,8 @@
 package main
 
-import "Go/forLoop"
+import (
+	"Go/functions"
+)
 
 // var (
 // 	stringInt int64
@@ -47,5 +49,7 @@ func main() {
 
 	// forLoop.NestedLoop()
 
-	forLoop.RangeInFor()
+	// forLoop.RangeInFor()
+
+	functions.MultiMethods(1,2,10)
 }

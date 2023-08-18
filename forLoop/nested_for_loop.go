@@ -10,6 +10,10 @@ func NestedLoop() {
 		}
 	}
 
+}
+
+func NestedLoopOnSlice() {
+
 	fmt.Println("Using Nested for-loop on Multi-Dimensional Array.")
 
 	var arr = [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
@@ -19,4 +23,5 @@ func NestedLoop() {
 			fmt.Println(arr[i][j])
 		}
 	}
+
 }

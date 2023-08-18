@@ -1,52 +1,45 @@
 package main
 
-import (
-	structFolder "Go/struct"
-	"bufio"
-	"fmt"
-	"os"
-	"strconv"
-	"strings"
-)
-
-var (
-	stringInt int64
-	data      []string
-)
+// var (
+// 	stringInt int64
+// 	data      []string
+// )
 
 func main() {
 
-	i := 0
-	for i < 3 {
-		if i == 0 {
+	// i := 0
+	// for i < 3 {
+	// 	if i == 0 {
 
-			fmt.Print("Enter First name: ")
+	// 		fmt.Print("Enter First name: ")
 
-		} else if i == 1 {
+	// 	} else if i == 1 {
 
-			fmt.Print("Enter Last name: ")
+	// 		fmt.Print("Enter Last name: ")
 
-		} else {
+	// 	} else {
 
-			fmt.Print("Enter age: ")
+	// 		fmt.Print("Enter age: ")
 
-		}
+	// 	}
 
-		reader := bufio.NewReader(os.Stdin)
+	// 	reader := bufio.NewReader(os.Stdin)
 
-		input, err := reader.ReadString('\n')
+	// 	input, err := reader.ReadString('\n')
 
-		input = strings.TrimSpace(input)
+	// 	input = strings.TrimSpace(input)
 
-		errorHandler(err)
+	// 	errorHandler(err)
 
-		data = append(data, input) // appends names given by user in slice to be used later.
+	// 	data = append(data, input) // appends names given by user in slice to be used later.
 
-		i++
-	}
-	stringInt, _ = strconv.ParseInt(data[2], 10, 64)
+	// 	i++
+	// }
+	// stringInt, _ = strconv.ParseInt(data[2], 10, 64)
 
-	e1 := structFolder.Employee{FirstName: data[0], LastName: data[1], Age: int(stringInt)}
+	// e1 := structFolder.Employee{FirstName: data[0], LastName: data[1], Age: int(stringInt)}
 
-	e1.Fullname()
+	// e1.Fullname()
+
+	//switchCase.Scase()
 }

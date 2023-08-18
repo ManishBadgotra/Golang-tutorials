@@ -1,8 +1,8 @@
-package main
+package forLoop
 
 import "fmt"
 
-func iteratorForLoop() {
+func IteratorForLoop() {
 	for i := 1; i <= 10; i++ {
 		if i == 10 {
 			fmt.Print(i)

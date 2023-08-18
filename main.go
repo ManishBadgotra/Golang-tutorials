@@ -1,5 +1,7 @@
 package main
 
+import "Go/forLoop"
+
 // var (
 // 	stringInt int64
 // 	data      []string
@@ -42,4 +44,6 @@ func main() {
 	// e1.Fullname()
 
 	//switchCase.Scase()
+
+	forLoop.NestedLoop()
 }

@@ -1,8 +1,8 @@
-package main
+package forLoop
 
 import "fmt"
 
-func whileLoop() {
+func WhileLoop() {
 	i := 0
 
 	for i < 10 {

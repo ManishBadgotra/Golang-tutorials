@@ -1,25 +1,22 @@
 package functions
 
-import "fmt"
-
 var (
 	y *int
 	z int
 )
 
-// func SingleMethods(x int) {
+func SingleMethods(x int) *int {
+	/*This Function returns the memory address.*/
+	return &x
+}
 
-// 	fmt.Println(y)
-
-// }
-
-func MultiMethods(x ...int) {
+func MultiMethods(x ...int) (string, int) {
 
 	for i := 0; i < len(x); i++ {
 		y = &x[i]
 		z = z + *y
 	}
 
-	fmt.Println(z)
+	return "Total:", z
 
 }

@@ -45,5 +45,7 @@ func main() {
 
 	//switchCase.Scase()
 
-	forLoop.NestedLoop()
+	// forLoop.NestedLoop()
+
+	forLoop.RangeInFor()
 }

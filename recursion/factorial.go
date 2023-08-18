@@ -1,4 +1,4 @@
-package recursive
+package recursion
 
 func Factorial(n int) int {
 	if n == 0 {

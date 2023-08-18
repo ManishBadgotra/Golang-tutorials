@@ -1,4 +1,4 @@
-package recursive
+package recursion
 
 import (
 	"fmt"

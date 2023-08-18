@@ -1,13 +1,13 @@
 package main
 
 import (
-	recursive "Go/recursion"
+	"Go/recursion"
 	"fmt"
 )
 
 func main() {
 
-	factorial := recursive.Factorial(5)
+	factorial := recursion.Factorial(5)
 	fmt.Println(factorial)
 
 }

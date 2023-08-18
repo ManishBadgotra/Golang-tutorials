@@ -14,7 +14,7 @@ Pointer example in Go:
         func main() {  
             x:=10  
             changeX(&x)  
-            fmt.Println(x)  // outpur is x = 0
+            fmt.Println(x)  // output is x = 0
         }  
         func changeX(x *int){  
             *x=0  

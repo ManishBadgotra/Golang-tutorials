@@ -1,4 +1,4 @@
-package main
+package ifElse
 
 import (
 	"fmt"
@@ -6,10 +6,10 @@ import (
 	"strings"
 )
 
-func ageChecker(n int) {
+func AgeChecker(n int) {
 	fmt.Print("Enter your Age: ")
 
-	reader(numString)
+	Reader(numString)
 
 	ageConv, err := strconv.ParseInt(strings.TrimSpace(numString), 10, 64)
 	errorHandler(err)

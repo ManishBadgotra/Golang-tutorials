@@ -1,11 +1,11 @@
-package main
+package ifElse
 
 import (
 	"bufio"
 	"os"
 )
 
-func reader(t string) string {
+func Reader(t string) string {
 
 	reader := bufio.NewReader(os.Stdin)
 

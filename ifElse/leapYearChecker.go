@@ -1,4 +1,4 @@
-package main
+package ifElse
 
 import (
 	"fmt"
@@ -6,10 +6,10 @@ import (
 	"strings"
 )
 
-func leapYearChecker(y int) string {
+func LeapYearChecker(y int) string {
 	fmt.Print("Enter year to check for Leap year or not: ")
 
-	reader(numString)
+	Reader(numString)
 
 	yearConv, err := strconv.ParseInt(strings.TrimSpace(numString), 10, 64)
 	errorHandler(err)

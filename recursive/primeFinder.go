@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func isPrime(n, i int) bool {
+func IsPrime(n, i int) bool {
 	if n <= 2 {
 		return n == 2
 	}
@@ -14,13 +14,13 @@ func isPrime(n, i int) bool {
 	if i*i > n {
 		return true
 	}
-	return isPrime(n, i+1)
+	return IsPrime(n, i+1)
 }
 
-func recursiveForPrime() {
+func RecursiveForPrime() {
 	fmt.Println("Prime numbers within the range of 1 to 100:")
 	for i := 2; i <= 100; i++ {
-		if isPrime(i, 2) {
+		if IsPrime(i, 2) {
 			fmt.Println(i)
 		}
 	}

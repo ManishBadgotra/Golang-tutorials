@@ -1,4 +1,4 @@
-package main
+package ifElse
 
 import "log"
 

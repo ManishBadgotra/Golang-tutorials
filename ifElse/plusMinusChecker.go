@@ -1,4 +1,4 @@
-package main
+package ifElse
 
 import (
 	"fmt"
@@ -6,11 +6,11 @@ import (
 	"strings"
 )
 
-func plusMinusChecker(n int) string {
+func PlusMinusChecker(n int) string {
 
 	fmt.Print("Enter number to check for Positive, Negative or Zero: ")
 
-	reader(numString)
+	Reader(numString)
 
 	num, err := strconv.ParseInt(strings.TrimSpace(numString), 10, 64)
 	errorHandler(err)

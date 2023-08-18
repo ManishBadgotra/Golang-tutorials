@@ -1,20 +1,20 @@
-package main
+package ifElse
 
 var (
 	num, year              int
 	email, pass, numString string
 )
 
-func main() {
+func IfElse() {
 
-	plusMinusChecker(num)
+	PlusMinusChecker(num)
 
-	loginChecker(email, pass)
+	LoginChecker(email, pass)
 
-	oddEven(num)
+	OddEven(num)
 
-	leapYearChecker(year)
+	LeapYearChecker(year)
 
-	ageChecker(num)
+	AgeChecker(num)
 
 }

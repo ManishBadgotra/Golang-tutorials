@@ -1,4 +1,4 @@
-package main
+package ifElse
 
 import (
 	"fmt"
@@ -6,11 +6,11 @@ import (
 	"strings"
 )
 
-func oddEven(n int) string {
+func OddEven(n int) string {
 
 	fmt.Printf("Enter number to check for Even or Odd: ")
 
-	reader(numString)
+	Reader(numString)
 
 	numConv, err := strconv.ParseInt(strings.TrimSpace(numString), 10, 64)
 	errorHandler(err)

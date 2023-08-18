@@ -1,18 +1,18 @@
-package main
+package ifElse
 
 import (
 	"fmt"
 	"strings"
 )
 
-func loginChecker(email string, pass string) {
+func LoginChecker(email string, pass string) {
 
 	fmt.Print("Enter your E-mail ID: ")
-	reader(email) // getting an input from user.
+	Reader(email) // getting an input from user.
 	email = strings.TrimSpace(email)
 
 	fmt.Print("Enter your Password: ")
-	reader(pass)
+	Reader(pass)
 	pass = strings.TrimSpace(pass)
 
 	if email == "manish@go.dev" && pass == "manish123" {

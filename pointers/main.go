@@ -1,12 +1,12 @@
-package main
+package pointer
 
 import "fmt"
 
 var name string
 
-func main() {
+func PointerWithStruct() {
 	empName := "Manish Sharma" // initilize and declare variable.
-	ename := &empName // initilize and declares memory address of empName.
+	ename := &empName          // initilize and declares memory address of empName.
 
 	fmt.Println(empName)
 

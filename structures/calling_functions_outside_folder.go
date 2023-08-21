@@ -1,4 +1,4 @@
-package structFolder
+package structures
 
 import "fmt"
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Go/forLoop"
+	"Go/structures"
 )
 
 func main() {
@@ -9,6 +9,7 @@ func main() {
 	// factorial := recursion.Factorial(5)
 	// fmt.Println(factorial)
 
-	forLoop.NestedLoopOnSlice()
+	// forLoop.NestedLoopOnSlice()
 
+	structures.Employee(FirstName: "Manish",LastName: "Sharma",Age: 25)
 }

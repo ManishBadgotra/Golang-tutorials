@@ -4,12 +4,13 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
+	"time"
 )
 
 var (
 	x    float64
 	y    float64
-	char rune
+	char string
 )
 
 func main() {
@@ -19,9 +20,7 @@ func main() {
 	fmt.Print("Enter First value: ")
 	input, err := Reader()
 
-	if err != nil {
-		fmt.Println(err.Error())
-	}
+	errorHandler(err) // error handler
 
 	input = strings.TrimSpace(input)
 	floatInput, err := strconv.ParseFloat(input, 64)
@@ -37,9 +36,7 @@ func main() {
 
 	input = strings.TrimSpace(input)
 
-	for _, runeData := range input {
-		char = runeData
-	}
+	char = input
 
 	fmt.Print("Enter Second value: ")
 	input, err = Reader()
@@ -49,23 +46,34 @@ func main() {
 	input = strings.TrimSpace(input)
 	floatInput, err = strconv.ParseFloat(input, 64)
 
-	if err != nil {
-		fmt.Println(err.Error())
-	}
+	errorHandler(err)
 
 	y = floatInput
 
+	// fmt.Printf("%T , %T, %T\n", x, char, y)
+
 	switch char {
-	case '+':
+	case "+":
 		fmt.Printf("Answer: %.4f\n", x+y)
-	case '-':
+		time.Sleep(3 * time.Second)
+
+	case "-":
 		fmt.Printf("Answer: %.4f\n", x-y)
-	case '*':
+		time.Sleep(3 * time.Second)
+
+	case "*":
 		fmt.Printf("Answer: %.4f\n", x*y)
-	case '/':
+		time.Sleep(3 * time.Second)
+
+	case "/":
 		fmt.Printf("Answer: %.4f\n", x/y)
+		time.Sleep(3 * time.Second)
+
 	default:
 		fmt.Println("You can only use Add(+), Subtract(-), Multiply(*), Divide(/) symbols.")
+		fmt.Println("Try Again...")
+		fmt.Println()
+		main()
 	}
 
 	defer RecoverHandler()

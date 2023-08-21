@@ -2,7 +2,6 @@ package main
 
 import (
 	"Go/interfaces"
-	"fmt"
 )
 
 func main() {
@@ -39,7 +38,7 @@ func main() {
 		Calling animal via Interfaces.
 	*/
 
-	var ketu = interfaces.Dog{
+	var dog = interfaces.Dog{
 		Animal: interfaces.Animal{
 			Breed:   "Canine",
 			Sound:   "Woof",
@@ -52,5 +51,5 @@ func main() {
 		Legs: 4,
 	}
 
-	fmt.Println(ketu)
+	dog.Bio()
 }

@@ -52,4 +52,8 @@ func main() {
 	}
 
 	dog.Bio()
+
+	dog.Name = "Bruno"
+
+	dog.Bio()
 }

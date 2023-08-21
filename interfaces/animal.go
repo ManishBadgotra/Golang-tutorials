@@ -16,12 +16,12 @@ type Flyer interface {
 }
 
 type Animal struct {
-	Breed    string
-	Sound    string
-	Nature string
-	CanFly   bool
-	CanSwim  bool
-	CanWalk  bool
+	Breed   string
+	Sound   string
+	Nature  string
+	CanFly  bool
+	CanSwim bool
+	CanWalk bool
 }
 
 type Dog struct {
@@ -70,7 +70,13 @@ func (e Eagle) Walking() {
 	fmt.Printf("Can walk on their %v legs...", e.Legs)
 }
 
-func (d Dog) Bio() {
+func (d *Dog) Bio() {
+	fmt.Println("Name:", d.Name)
+	fmt.Println("Breed:", d.Breed)
+	fmt.Println("Sound:", d.Sound)
+}
+
+func (d *Cat) Bio() {
 	fmt.Println("Name:", d.Name)
 	fmt.Println("Breed:", d.Breed)
 	fmt.Println("Sound:", d.Sound)

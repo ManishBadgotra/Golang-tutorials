@@ -13,6 +13,7 @@ var (
 )
 
 func main() {
+
 	fmt.Println("Basic Calculator Program.")
 
 	fmt.Print("Enter First value: ")
@@ -25,18 +26,14 @@ func main() {
 	input = strings.TrimSpace(input)
 	floatInput, err := strconv.ParseFloat(input, 64)
 
-	if err != nil {
-		fmt.Println("Found Error in:", err)
-	}
+	errorHandler(err)
 
 	x = floatInput
 
-	fmt.Print("Enter Operator: ")
+	fmt.Print("Enter Operator (+,-,*,/): ")
 	input, err = Reader()
 
-	if err != nil {
-		fmt.Println(err.Error())
-	}
+	errorHandler(err)
 
 	input = strings.TrimSpace(input)
 
@@ -47,9 +44,7 @@ func main() {
 	fmt.Print("Enter Second value: ")
 	input, err = Reader()
 
-	if err != nil {
-		fmt.Println("Found Error in:", err)
-	}
+	errorHandler(err)
 
 	input = strings.TrimSpace(input)
 	floatInput, err = strconv.ParseFloat(input, 64)
@@ -62,14 +57,16 @@ func main() {
 
 	switch char {
 	case '+':
-		fmt.Printf("Your Total is %.4f\n", x+y)
+		fmt.Printf("Answer: %.4f\n", x+y)
 	case '-':
-		fmt.Printf("Your Total is %.4f\n", x-y)
+		fmt.Printf("Answer: %.4f\n", x-y)
 	case '*':
-		fmt.Printf("Your Total is %.4f\n", x*y)
+		fmt.Printf("Answer: %.4f\n", x*y)
 	case '/':
-		fmt.Printf("Your Total is %.4f\n", x/y)
+		fmt.Printf("Answer: %.4f\n", x/y)
 	default:
 		fmt.Println("You can only use Add(+), Subtract(-), Multiply(*), Divide(/) symbols.")
 	}
+
+	defer RecoverHandler()
 }

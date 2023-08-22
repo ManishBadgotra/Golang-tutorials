@@ -2,6 +2,7 @@ package main
 
 import (
 	"Go/interfaces"
+	"Go/maps"
 )
 
 func main() {
@@ -56,4 +57,6 @@ func main() {
 	dog.Name = "Bruno"
 
 	dog.Bio()
+
+	maps.MapsInGolang()
 }

@@ -1,9 +1,13 @@
 package main
 
 import (
+	"Go/goroutines"
 	"Go/interfaces"
 	"Go/maps"
+	"sync"
 )
+
+var wg = sync.WaitGroup{}
 
 func main() {
 
@@ -59,4 +63,9 @@ func main() {
 	dog.Bio()
 
 	maps.MapsInGolang()
+
+	go goroutines.Practice1()
+	go goroutines.Practice1()
+	go goroutines.Practice1()
+
 }

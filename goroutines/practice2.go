@@ -1,8 +1,8 @@
-package main
+package goroutines
 
 import "fmt"
 
-func practice2(s string) {
+func Practice2(s string) {
 	greet := func(s string) {
 		for i := 1; i < 6; i++ {
 			fmt.Println(s, i)

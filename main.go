@@ -2,10 +2,9 @@ package main
 
 import (
 	"Go/goroutines"
-	"sync"
 )
 
-var wg sync.WaitGroup
+// var wg sync.WaitGroup
 
 func main() {
 
@@ -64,5 +63,5 @@ func main() {
 
 	goroutines.Practice1()
 
-	wg.Wait()
+	// wg.Wait()
 }

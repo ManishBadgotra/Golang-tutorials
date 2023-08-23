@@ -2,12 +2,10 @@ package main
 
 import (
 	"Go/goroutines"
-	"Go/interfaces"
-	"Go/maps"
 	"sync"
 )
 
-var wg = sync.WaitGroup{}
+var wg sync.WaitGroup
 
 func main() {
 
@@ -43,29 +41,28 @@ func main() {
 		Calling animal via Interfaces.
 	*/
 
-	var dog = interfaces.Dog{
-		Animal: interfaces.Animal{
-			Breed:   "Canine",
-			Sound:   "Woof",
-			Nature:  "Domestic",
-			CanFly:  false,
-			CanSwim: true,
-			CanWalk: true,
-		},
-		Name: "Ketu",
-		Legs: 4,
-	}
+	// var dog = interfaces.Dog{
+	// 	Animal: interfaces.Animal{
+	// 		Breed:   "Canine",
+	// 		Sound:   "Woof",
+	// 		Nature:  "Domestic",
+	// 		CanFly:  false,
+	// 		CanSwim: true,
+	// 		CanWalk: true,
+	// 	},
+	// 	Name: "Ketu",
+	// 	Legs: 4,
+	// }
 
-	dog.Bio()
+	// dog.Bio()
 
-	dog.Name = "Bruno"
+	// dog.Name = "Bruno"
 
-	dog.Bio()
+	// dog.Bio()
 
-	maps.MapsInGolang()
+	// maps.MapsInGolang()
 
-	go goroutines.Practice1()
-	go goroutines.Practice1()
-	go goroutines.Practice1()
+	goroutines.Practice1()
 
+	wg.Wait()
 }

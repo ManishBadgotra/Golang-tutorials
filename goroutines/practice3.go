@@ -5,7 +5,6 @@ import (
 	"log"
 	"net/http"
 )
-
 func Practice3() {
 	websiteList := []string{
 		"https://google.com",

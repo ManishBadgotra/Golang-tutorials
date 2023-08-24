@@ -9,16 +9,11 @@ Goroutines and Wait Groups Usage:
 Creating Goroutines:
 A Goroutine is created using the go keyword followed by a function call. This allows the function to be executed concurrently. For example:
 
-
-
-
-
 Code Example:
 
 go func() {
     // Concurrent task logic
 }()
-
 
 
 Wait Groups:
